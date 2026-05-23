@@ -7,5 +7,6 @@ secret_scan:
   include:
     - .
   exclude:
+    - .github
     - node_modules
     - vendor

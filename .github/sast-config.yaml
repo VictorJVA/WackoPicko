@@ -7,5 +7,6 @@ sast:
   include:
     - .
   exclude:
+    - .github
     - node_modules
     - vendor
