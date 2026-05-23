@@ -1,7 +1,7 @@
 language: EN
 # strict: true
 # strictness_threshold: high
-strict: false
+strict: true
 output:
   file_path: results.csv
   format: CSV
