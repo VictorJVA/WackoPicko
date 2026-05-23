@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: fluidattacks/sca-action@<version>
+      - uses: fluidattacks/sca-action@latest
         id: scan
 
       # # Optional: upload findings to the GitHub Security tab

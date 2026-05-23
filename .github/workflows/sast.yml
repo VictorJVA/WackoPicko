@@ -14,7 +14,7 @@ jobs:
         with:
           fetch-depth: 0 # Required for differential scanning
 
-      - uses: fluidattacks/sast-action@<version> # Use latest released version
+      - uses: fluidattacks/sast-action@latest # Use latest released version
         id: scan
 
       # Optional: upload findings to the GitHub Security tab
