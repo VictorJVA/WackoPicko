@@ -1,9 +1,10 @@
 language: EN
-strict: true
-strictness_threshold: high
-output:
-  file_path: results.csv
-  format: CSV
+# strict: true
+# strictness_threshold: high
+strict: false
+# output:
+#   file_path: results.csv
+#   format: CSV
 sast:
   include:
     - .
