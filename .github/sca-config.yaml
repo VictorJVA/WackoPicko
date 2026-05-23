@@ -2,9 +2,9 @@ language: EN
 # strict: true
 # strictness_threshold: high
 strict: false
-# output:
-#   file_path: results.csv
-#   format: CSV
+output:
+  file_path: results.csv
+  format: CSV
 sca:
   include:
     - .

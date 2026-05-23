@@ -16,9 +16,9 @@ jobs:
           scan_config_path: .github/sca-config.yaml
           scanner_mode: full
 
-      # - name: Upload results
-      #   if: always()
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: sca-results
-      #     path: results.csv
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sca-results
+          path: results.csv

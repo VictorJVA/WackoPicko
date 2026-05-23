@@ -27,8 +27,8 @@ jobs:
           name: sast-results
           path: results.csv
 
-      # - name: Fail if vulnerabilities found
-      #   if: steps.scan.outputs.vulnerabilities_found == 'true'
-      #   run: |
-      #     echo "::error::SAST found vulnerabilities. Download results.csv for details."
-      #     exit 1
+      - name: Fail if vulnerabilities found
+        if: steps.scan.outputs.vulnerabilities_found == 'true'
+        run: |
+          echo "::error::SAST found vulnerabilities. Download results.csv for details."
+          exit 1
