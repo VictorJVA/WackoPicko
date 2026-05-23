@@ -8,9 +8,9 @@ jobs:
   scan:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1.2.0
+      - uses: actions/checkout@v4
 
-      - uses: fluidattacks/sca-action@latest
+      - uses: fluidattacks/sca-action@v1.2.0
         id: scan
         with:
           scan_config_path: .github/sca-config.yaml
