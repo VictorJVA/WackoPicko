@@ -20,8 +20,8 @@ jobs:
             scan_config_path: .github/sast-config.yaml
 
       # Optional: upload findings to the GitHub Security tab
-      - name: Upload SARIF
-        if: always()
-        uses: github/codeql-action/upload-sarif@v4
-        with:
-          sarif_file: ${{ steps.scan.outputs.sarif_file }}
+      # - name: Upload SARIF
+      #   if: always()
+      #   uses: github/codeql-action/upload-sarif@v4
+      #   with:
+      #     sarif_file: ${{ steps.scan.outputs.sarif_file }}
